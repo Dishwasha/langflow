@@ -13,6 +13,7 @@ from lfx.base.models.google_generative_ai_constants import GOOGLE_GENERATIVE_AI_
 from lfx.base.models.google_generative_ai_model import ChatGoogleGenerativeAIFixed
 from lfx.base.models.model import LCModelComponent
 from lfx.base.models.openai_constants import OPENAI_CHAT_MODEL_NAMES, OPENAI_REASONING_MODEL_NAMES
+from lfx.base.models.watsonx_constants import IBM_WATSONX_URLS
 from lfx.field_typing import LanguageModel
 from lfx.field_typing.range_spec import RangeSpec
 from lfx.inputs.inputs import BoolInput, MessageTextInput, StrInput
@@ -23,14 +24,6 @@ from lfx.utils.util import transform_localhost_url
 
 # IBM watsonx.ai constants
 IBM_WATSONX_DEFAULT_MODELS = ["ibm/granite-3-2b-instruct", "ibm/granite-3-8b-instruct", "ibm/granite-13b-instruct-v2"]
-IBM_WATSONX_URLS = [
-    "https://us-south.ml.cloud.ibm.com",
-    "https://eu-de.ml.cloud.ibm.com",
-    "https://eu-gb.ml.cloud.ibm.com",
-    "https://au-syd.ml.cloud.ibm.com",
-    "https://jp-tok.ml.cloud.ibm.com",
-    "https://ca-tor.ml.cloud.ibm.com",
-]
 
 
 class LanguageModelComponent(LCModelComponent):
